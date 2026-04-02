@@ -1,0 +1,291 @@
+{
+    "name": "Commodore64",
+    "author": "Thinkyhead",
+    "variables":
+    {
+        "black": "#4c0900",
+        "black2": "#130d26",
+        "black3": "#000e1a",
+        "blue": "#0057ea",
+        "blue2": "#2482ff",
+        "blue3": "#6ea6d9",
+        "blue4": "#004480",
+        "blue5": "#309eff",
+        "blue6": "#7799ff",
+        "blue7": "#9ec9e6",
+        "blue8": "#8fddf6",
+        "blue9": "#003560",
+        "blue10": "#223545",
+        "blue11": "#0000f0",
+        "blue12": "#182441",
+        "cyan": "#9ee6c9",
+        "green": "#154f00",
+        "grey": "#999999",
+        "orange": "#996022",
+        "red": "#800008",
+        "red2": "#ff1e00",
+        "white": "#ffffff",
+        "yellow": "#ffff00",
+        "yellow2": "#806f00",
+        "yellow3": "#eeeebb"
+    },
+    "globals":
+    {
+        "foreground": "var(blue2)",
+        "background": "var(blue)",
+        "caret": "var(blue2)",
+        "invisibles": "color(var(blue3) alpha(0.5))",
+        "line_highlight": "color(var(white) alpha(0.4))",
+        "selection": "var(blue5)",
+        "gutter": "var(blue5)",
+        "find_highlight": "var(white)"
+    },
+    "rules":
+    [
+        {
+            "name": "Punctuation",
+            "scope": "punctuation - (punctuation.definition.string | punctuation.definition.comment)",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "Constant",
+            "scope": "constant",
+            "foreground": "color(var(white) alpha(0.73))"
+        },
+        {
+            "name": "Entity",
+            "scope": "entity",
+            "foreground": "color(var(yellow3) alpha(0.8))"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword.operator",
+            "foreground": "color(var(blue7) alpha(0.82))"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "color(var(cyan) alpha(0.82))"
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "Statement Delimiter",
+            "scope": "support.token.delimiter.statement",
+            "foreground": "var(blue9)"
+        },
+        {
+            "name": "String",
+            "scope": "string -string.unquoted.old-plist -string.unquoted.heredoc, string.unquoted.heredoc string",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "Comment",
+            "scope": "comment, keyword.rem",
+            "foreground": "var(blue12)"
+        },
+        {
+            "name": "Support",
+            "scope": "support",
+            "foreground": "var(grey)"
+        },
+        {
+            "name": "Variable",
+            "scope": "variable",
+            "foreground": "color(var(yellow3) alpha(0.8))"
+        },
+        {
+            "name": "Lang Variable",
+            "scope": "variable.language",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "Function Call",
+            "scope": "meta.function-call",
+            "foreground": "var(blue6)"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid.warning",
+            "background": "var(orange)"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid.error",
+            "background": "var(red)"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "background": "var(red)"
+        },
+        {
+            "name": "Embedded Source",
+            "scope": "text source, string.unquoted.heredoc, source source",
+            "foreground": "var(blue3)",
+            "background": "var(blue10)"
+        },
+        {
+            "name": "Entity inherited-class",
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(blue3)",
+            "font_style": "italic"
+        },
+        {
+            "name": "String embedded-source",
+            "scope": "string.quoted source",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "String constant",
+            "scope": "string constant",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "String.regexp",
+            "scope": "string.regexp",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "String variable",
+            "scope": "string variable",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "Support.function",
+            "scope": "support.function",
+            "foreground": "var(blue6)"
+        },
+        {
+            "name": "Support.constant",
+            "scope": "support.constant",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "Exception",
+            "scope": "support.type.exception",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "C/C++ Preprocessor Line",
+            "scope": "meta.preprocessor.c",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "C/C++ Preprocessor Directive",
+            "scope": "meta.preprocessor.c keyword",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Doctype/XML Processing",
+            "scope": "meta.sgml.html meta.doctype, meta.sgml.html meta.doctype entity, meta.sgml.html meta.doctype string, meta.xml-processing, meta.xml-processing entity, meta.xml-processing string",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Meta.tag.A",
+            "scope": "meta.tag, meta.tag entity",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "css tag-name",
+            "scope": "meta.selector.css entity.name.tag",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "css#id",
+            "scope": "meta.selector.css entity.other.attribute-name.id",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "css.class",
+            "scope": "meta.selector.css entity.other.attribute-name.class",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "css property-name:",
+            "scope": "support.type.property-name.css",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "css property-value;",
+            "scope": "meta.property-group support.constant.property-value.css, meta.property-value support.constant.property-value.css",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "css @at-rule",
+            "scope": "meta.preprocessor.at-rule keyword.control.at-rule",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "css additional-constants",
+            "scope": "meta.property-value support.constant.named-color.css, meta.property-value constant",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "css constructor.argument",
+            "scope": "meta.constructor.argument.css",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "diff.header",
+            "scope": "meta.diff, meta.diff.header",
+            "foreground": "var(yellow)",
+            "background": "var(black3)"
+        },
+        {
+            "name": "diff.deleted",
+            "scope": "markup.deleted",
+            "foreground": "var(yellow)",
+            "background": "var(black)"
+        },
+        {
+            "name": "diff.changed",
+            "scope": "markup.changed",
+            "foreground": "var(yellow)",
+            "background": "var(yellow2)"
+        },
+        {
+            "name": "diff.inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(yellow)",
+            "background": "var(green)"
+        },
+        {
+            "name": "Raw Markup",
+            "scope": "markup.raw",
+            "background": "color(var(blue8) alpha(0.19))"
+        },
+        {
+            "name": "Block Quote",
+            "scope": "markup.quote",
+            "background": "var(blue4)"
+        },
+        {
+            "name": "List",
+            "scope": "markup.list",
+            "background": "var(black2)"
+        },
+        {
+            "name": "Bold Markup",
+            "scope": "markup.bold",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Italic Markup",
+            "scope": "markup.italic",
+            "foreground": "var(yellow)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Heading Markup",
+            "scope": "markup.heading",
+            "foreground": "var(yellow)",
+            "background": "var(blue11)",
+            "font_style": "bold"
+        }
+    ]
+}
